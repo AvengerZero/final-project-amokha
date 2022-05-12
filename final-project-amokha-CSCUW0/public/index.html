@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topnav">
+      <a class="active" href="">Home</a>
+      <a href="bids.html">Bidding</a>
+      <a href="owners.html">Owners</a>
+      <a href="#about">About</a>
+      <img id="reveal-btn" class="exit hidden" src="images/magnifyingglass.png" alt="hide button">
+      <script src="public.js"></script>
+    </header>
+    <div id="main">
+      <article>
+        <div id="googleMap"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkeoZpiV_7l5S8alKhWhdy5wKteBGYKfY&callback=myMap" async></script>
+      </article>
+      <nav id="result">
+        <img id="hide-btn1" class="exit" src="images/arrow.png" alt="hide button">
+        <input id ="searching" type="text" placeholder="Search..">
+        <div class="result topnav">
+        </div>
+      </nav>
+      <aside id="selected" class = "hidden">
+        <img id="hide-btn2" class="exit" src="images/arrow.png" alt="hide button">
+        <p id="address"></p>
+        <p id="info"></p>
+        <p id="price"></p>
+        <p id="owner">Owner: </p>
+        <p id="bidders">Bidders: </p>
+        <p id="awards"></p>
+        <p><a id="link" href="">Extra Resources</a></p>
+        <img id="home-photo" src="../images/arrow.png" alt="Building Exterior My image is not being
+        uploaded properly Error 422">
+        <p class="hidden" id="newuser">If you have no UserID put 0 and one will be provided for you</p>
+        <input class="hidden" id= "uid" type="number" placeholder="UserID..">
+        <input class="hidden" id="price-bid" type="number" placeholder="Bid Price..">
+        <input class="hidden" id="homeid" type="number">
+        <button type="button" id="bid-btn">BID HERE</button>
+        <p id="price-error" class="error hidden">BID BELLOW MARKET PRICE</p>
+        <p id="submitted" class="hidden"></p>
+      </aside>
+    </div>
+    <footer>Thanks to Google Maps and Zillow</footer>
+  </body>
+</html>
